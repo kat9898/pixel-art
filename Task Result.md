@@ -1,5 +1,7 @@
 # Task Result
 
+You can try live demo: https://kat9898.github.io/pixel-art/
+
 ## Used technologies / Frameworks
 
 I use the following technologies / frameworks in my project:
