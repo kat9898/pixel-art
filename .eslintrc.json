@@ -22,7 +22,7 @@
         "after": true
       }
     ],
-    "react/react-in-jsx-scope": "on",
+    "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "react/function-component-definition": [
       "error",
