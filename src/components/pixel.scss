@@ -1,0 +1,9 @@
+.pixel {
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  
+  &.dowloading {
+    border: none;
+  }
+}

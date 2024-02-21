@@ -1,0 +1,132 @@
+.palette {
+  max-width: 30%;
+  font-size: 18px;
+  margin-right: 20px;
+
+  &-tools {
+    &__options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+  
+      button {
+        background: none;
+        border: 1px solid rgb(192, 192, 192);
+  
+        &:first-child {
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+        }
+        &:last-child {
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+      }
+  
+      button.active {
+        border: 2px solid #fff;
+      }
+  
+      svg {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-reset {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #7c7c7c;
+    color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+
+    &:active {
+      border: 2px solid #000000;
+    }
+  }
+
+  &-export {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+
+    &__buttons {
+      margin-left: 20px;
+
+      button {
+        background-color: #7c7c7c;
+        cursor: pointer;
+        width: 50px;
+        color: #FFF;
+        padding: 5px 5px;
+        border: 1px solid #000000;
+
+        &:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .palette {
+    margin-top: 10px;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: '1fr 2fr';
+    grid-template-rows: '1fr 1fr 1fr';
+    gap: 5px;
+    max-width: none;
+
+    &-tools__container {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+
+      .palette-tools {
+        margin: 0;
+      }
+    }
+
+    &-export {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      margin: 0;
+    }
+
+    &-reset {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      justify-self: center;
+      margin: 0;
+    }
+
+    fieldset {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.editor {
+  &-body {
+    display: flex;
+    justify-content: space-around;
+  }
+  padding: 20px;
+}
+
+@media screen and (max-width: 870px) {
+  .editor {
+    &-body {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}
