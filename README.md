@@ -1,4 +1,5 @@
 # Pixel Art
+You can try live demo: https://kat9898.github.io/pixel-art/
 
 ## Technologies:
 
