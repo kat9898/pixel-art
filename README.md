@@ -1,6 +1,4 @@
 # Pixel Art
-You can try live demo: https://kat9898.github.io/pixel-art/
-
 
 https://github.com/kat9898/pixel-art/assets/39970318/b29f8598-a15e-4383-901a-1f0f52ff7977
 
